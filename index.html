@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body class="bg-dark">
+   <header class="container-fluid">
+       <div class="row">
+
+           <button
+           class="btn btn-primary fab"
+           type="button"
+           data-bs-toggle="offcanvas"
+           data-bs-target="#order"
+           aria-controls="order"
+           
+           
+            ><i class="mdi mdi-cart fs-5"></i>
+        </button>
+    </div>
+
+   </header>
+   <main class="container-fluid">
+       <div class="row p-3" >
+        <h1 class="justify-content-center d-flex  border-2 border">Ice Cream Flavors</h1>
+        <div class="row" id="iceCreamMenu">
+
+        </div>
+        <div class="row p-3" >
+            <h1 class="justify-content-center d-flex border-2 border">Cone or Bowl?</h1>
+            <div class="row" id="vesselMenu">
+    
+            </div>
+            <div class="row p-3" >
+                <h1 class="justify-content-center d-flex border-2 border">Toppings</h1>
+                <div class="row" id="topMenu">
+        
+                </div>
+           <!-- <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="${ic.image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">'${ic.name}'</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+           </div> -->
+       </div>
+       <div class="row price">
+
+           <div class="col-12 d-flex text-light justify-content-center" >
+               <h3>Ice Cream: $</h3>     <h3 id="totalic">0</h3>
+            </div>
+            <div class="col-12 d-flex text-light justify-content-center" >
+                
+                <h3>cone/bowl: $</h3>     <h3 id="totalv">0</h3>
+            </div>
+            <div class="col-12 d-flex text-light justify-content-center" >
+                
+                <h3>toppings: $</h3>     <h3 id="totalt">0</h3>
+            </div>
+        </div>
+
+   </main>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="order"
+      aria-labelledby="orderLabel"
+    >
+      <div class="offcanvas-header bg-primary text-light">
+        <h5 class="offcanvas-title" id="orderLabel">Order</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body bg-dark">
+        <!-- SECTION Order Form -->
+        <ol class="text-light p-3" id="order-items">
+          <!-- <li class="d-flex justify-content-between border-bottom border-secondary">
+                    <p class="m-1">Mocha</p>
+                    <p class="m-1">$3.00</p>
+                  </li> -->
+        </ol>
+        <div class="d-flex justify-content-between text-light">
+          <h3>Total: $<span id="total">0.00</span></h3>
+          <button
+            disabled
+            class="btn btn-success"
+            id="checkout-button"
+            onclick="checkout()"
+          >
+            checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

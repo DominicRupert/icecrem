@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  main {
+    flex-grow: 1;
+  }
+  h1{
+      color:aliceblue !important;
+     
+  }
+
+  h3{
+    color:aliceblue !important;
+   
+}
+h5{
+    color:aliceblue !important;
+   
+}
