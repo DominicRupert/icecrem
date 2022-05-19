@@ -193,6 +193,9 @@ function buyTop(id) {
   }
   drawTopOrder();
 }
+function getTotal() {
+  
+}
 
 drawIce();
 drawCone();
